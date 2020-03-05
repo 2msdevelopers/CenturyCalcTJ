@@ -28,7 +28,29 @@ public class Year {
     }
 
     public void displayCentury () {
-        System.out.println("The Century is " + getCentury());
+        /*String str1 = getCentury();
+            if (str1.contains(1)) {
+                System.out.println("The Century is " + getCentury() + "st");
+            } else if (str1.contains(2)) {
+                System.out.println("The Century is " + getCentury() + "nd");
+            } else if (str1.contains(3)) {
+                System.out.println("The Century is " + getCentury() + "rd");
+            } else {
+                System.out.println("The Century is " + getCentury() + "th");
+            }
+        }*/
+
+        if (getCentury() == 1 || getCentury() == 21) {
+            System.out.println("The Century is " + getCentury() + "st");
+        } else if (getCentury() == 2 || getCentury() == 22) {
+            System.out.println("The Century is " + getCentury() + "nd");
+        } else if (getCentury() == 3 || getCentury() == 23) {
+            System.out.println("The Century is " + getCentury() + "rd");
+        //} else if (getCentury() == 21) {
+            //System.out.println("The Century is " + getCentury() + "st");
+        } else {
+            System.out.println("The Century is " + getCentury() + "th");
+        }
     }
 
     public long getYear() {
