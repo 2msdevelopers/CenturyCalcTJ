@@ -28,9 +28,9 @@ public class Year {
     }
 
     public void displayCentury () {
-        /*String str1 = getCentury();
-            if (str1.contains(1)) {
-                System.out.println("The Century is " + getCentury() + "st");
+        /*Interger parse.int
+
+          System.out.println("The Century is " + getCentury() + "st");
             } else if (str1.contains(2)) {
                 System.out.println("The Century is " + getCentury() + "nd");
             } else if (str1.contains(3)) {
@@ -39,17 +39,18 @@ public class Year {
                 System.out.println("The Century is " + getCentury() + "th");
             }
         }*/
+        int century = getCentury();
 
-        if (getCentury() == 1 || getCentury() == 21) {
-            System.out.println("The Century is " + getCentury() + "st");
-        } else if (getCentury() == 2 || getCentury() == 22) {
-            System.out.println("The Century is " + getCentury() + "nd");
-        } else if (getCentury() == 3 || getCentury() == 23) {
-            System.out.println("The Century is " + getCentury() + "rd");
-        //} else if (getCentury() == 21) {
-            //System.out.println("The Century is " + getCentury() + "st");
+        if (century == 1 || century == 21) {
+            System.out.println("The Century is " + century + "st");
+        } else if (century == 2 || century == 22) {
+            System.out.println("The Century is " + century + "nd");
+        } else if (century == 3 || century == 23) {
+            System.out.println("The Century is " + century + "rd");
+        //} else if (century == 21) {
+            //System.out.println("The Century is " + century + "st");
         } else {
-            System.out.println("The Century is " + getCentury() + "th");
+            System.out.println("The Century is " + century + "th");
         }
     }
 
